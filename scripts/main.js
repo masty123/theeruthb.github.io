@@ -31,34 +31,36 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px' ,
-    duration: '2000',
+    duration: '1000',
     reset: 'true'
 })
 
 //Reveal Home
 sr.reveal('.home_title',{});
-sr.reveal('.button', {delay: 200});
-sr.reveal('.home_img', { delay: 400 });
-sr.reveal('.home_social-icon', { interval: 200  });
+sr.reveal('.button', {delay: 100});
+sr.reveal('.home_img', { delay: 200 });
+sr.reveal('.home_social-icon', { interval: 100  });
 
 //Reveal About
 // sr.reveal('.about_img', {});
-sr.reveal('.about_subtitle', { delay: 200 });
-sr.reveal('.about_text', { delay: 400 });
+sr.reveal('.about_subtitle', { delay: 100 });
+sr.reveal('.about_text', { delay: 200 });
 
 //Skills Reveal
 sr.reveal('.skills_subtitle', {});
-sr.reveal('.skills_text', {delay: 200});
-sr.reveal('.skills_data', {interval: 200});
-sr.reveal('.skills_img', {interval: 400 });
+sr.reveal('.skills_text', {delay: 100});
+sr.reveal('.skills_data', {interval: 100});
+sr.reveal('.skills_img', {interval: 200 });
 
 //Work Reveal
-sr.reveal('.work_img', {interval: 200});
+sr.reveal('.work_img', {interval: 100});
+sr.reveal('.work_text', {delay: 100});
 
-//Reveal Contact
-sr.reveal('.contact_input', { interval: 200 });
+// //Reveal Contact
+// sr.reveal('.contact_input', { interval: 100 });
 
-
+//Footer test
+sr.reveal('.footer', { interval: 100 });
 
 
 

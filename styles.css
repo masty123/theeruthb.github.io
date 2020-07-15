@@ -57,7 +57,7 @@ body{
 }
 
 h1,h2,p{
-  margin: 0;
+  margin: 2;
 }
 
 ul{
@@ -128,12 +128,16 @@ img{
 .nav{
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: var(--font-semi);
 }
 
 @media screen and (max-width: 768px){
+
+  .nav{
+    justify-content: space-between;
+  }
 
   .nav_menu{
     position: fixed;
@@ -145,6 +149,7 @@ img{
     background-color: var(--first-color);
     transition: .5s; 
   }
+
 }
 .nav_item{
   margin-bottom:  var(--mb-4);
@@ -275,7 +280,7 @@ img{
 /* Skills */
 .skills_container{
   row-gap: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .skills_subtitle{
@@ -339,9 +344,13 @@ img{
   width: 55%;
 }
 
-.skills_img{
-  border-radius: .5rem; 
+.skills_nodejs{
+  width: 50%;
 }
+
+/* .skills_img{
+  border-radius: .5rem; 
+} */
 
 .unityImg{
   width:30px;
@@ -364,10 +373,52 @@ p {
   row-gap: 2rem; 
 }
 
+.work_text {
+  font-size: 4vh;
+  color: white;
+  cursor: pointer;
+  text-shadow: black;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  /* text-align: center; */
+}
+
+/* .work_description{
+  color: white;
+} */
+
 .work_img{
   box-shadow: 0 4px 25px rgba(14,36,49, .15);
   border-radius: .5rem;
   overflow: hidden;
+  position: center;
+  width: fit-content;
+  height: 175px; 
+}
+
+.work_img:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all .2s linear;
+}
+
+.work_img:hover:before{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.work_img p{
+  position: relative;
 }
 
 .work_img img {
@@ -405,7 +456,6 @@ p {
 /* Footer */
 .footer{
   background-color: var(--first-color);
-  color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0 ;
@@ -422,7 +472,7 @@ p {
 
 .footer_icon{
   font-size: 1.5rem;
-  color: #fff;
+  color:black;
   margin: 0 var(--mb-2);
 }
 
@@ -433,6 +483,12 @@ p {
   body{
     margin: 0;
   }
+
+  /* .work_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  } */
 
   .section{
     padding-top: 4rem;
@@ -512,6 +568,12 @@ p {
     column-gap: 2rem;
   }
 
+ .secondary{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 2rem;
+  }
+
   .contact_form{
     width: 360px;
   }
@@ -530,7 +592,13 @@ p {
   .home_img{
     right: 10% ;
   }
-}
+
+  /* .work_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+} */
 
 
 
