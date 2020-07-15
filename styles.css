@@ -150,6 +150,14 @@ img{
     transition: .5s; 
   }
 
+  .work_img{
+    width: 400px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 .nav_item{
   margin-bottom:  var(--mb-4);
@@ -396,9 +404,6 @@ p {
   box-shadow: 0 4px 25px rgba(14,36,49, .15);
   border-radius: .5rem;
   overflow: hidden;
-  position: center;
-  width: fit-content;
-  height: 175px; 
 }
 
 .work_img:before{
