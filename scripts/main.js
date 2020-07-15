@@ -24,8 +24,49 @@ function linkAction(){
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show');
 }
-
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 0, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#nav-list a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#nav-list ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
 
 // Scroll to reveal
 const sr = ScrollReveal({
@@ -39,12 +80,12 @@ const sr = ScrollReveal({
 sr.reveal('.home_title',{});
 sr.reveal('.button', {delay: 100});
 sr.reveal('.home_img', { delay: 200 });
-sr.reveal('.home_social-icon', { interval: 100  });
 
 //Reveal About
 // sr.reveal('.about_img', {});
 sr.reveal('.about_subtitle', { delay: 100 });
 sr.reveal('.about_text', { delay: 200 });
+
 
 //Skills Reveal
 sr.reveal('.skills_subtitle', {});
@@ -61,6 +102,9 @@ sr.reveal('.work_text', {delay: 100});
 
 //Footer test
 sr.reveal('.footer', { interval: 100 });
+
+
+
 
 
 
