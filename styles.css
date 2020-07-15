@@ -491,6 +491,11 @@ p {
   margin: 0 var(--mb-2);
 }
 
+.imgicon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
 
 
 /* Media Queries */
