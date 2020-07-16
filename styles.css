@@ -85,11 +85,6 @@ img{
   display: block;
 }
 
-.line{
-    border: 1px solid black;
-    margin: 3px 20px;
-}
-
 /* CSS Classes */
 .section-title{
   position: relative;
@@ -255,8 +250,8 @@ img{
 
 .home_img{
   position: absolute;
-  right: 15%;
-  bottom: 5%;
+  right: 10%;
+  bottom: 10%;
   width: 295px;
 }
 
@@ -397,22 +392,22 @@ p {
 }
 
 .work_text {
-  font-size: 4vh;
+  font-size: 2vh;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
   position: absolute;
-  margin: 5px;
+  margin: 0 auto;
   left: 0;
   right: 0;
-  top: 15%;
+  top: 5%;
   color: #fff;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 4px 4px #000000;
 
 }
 
 .img_description{
-  font-size: 3vh;
+  font-size: 1.5vh;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -425,7 +420,7 @@ p {
 }
 
 .img_role{
-  font-size: 3vh;
+  font-size: 1.5vh;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -438,7 +433,7 @@ p {
 }
 
 .img_tool {
-  font-size: 3vh;
+  font-size: 1.5vh;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -619,9 +614,8 @@ p {
 
 
   .home_img{
-    width: 300px;
-    right: 20%;
-    bottom: 5%;
+    width: 457px;
+    bottom: 10%;
   }
 
 
@@ -666,15 +660,22 @@ p {
   }
 
   .home_img{
-    right: 15% ;
+    right: 10% ;
     bottom: 30%;
-    width: 400px;
   }
 
   .work_text {
-    top: 15%;
-    font-size: 4vh;
+    top: 10%;
   }
+
+  /* .work_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }*/
+  .work_text{
+    font-size: 4vh;
+  } 
 
    .img_description{
     font-size: 2.5vh;
