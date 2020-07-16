@@ -158,10 +158,6 @@ img{
     margin-right: auto;
   }
 
-  .work_text {
-    top: 25%;
-  }
-
 }
 .nav_item{
   margin-bottom:  var(--mb-4);
