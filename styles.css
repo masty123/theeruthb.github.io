@@ -394,6 +394,7 @@ p {
   right: 0;
   top: 20%;
 }
+
 .img_description{
   font-size: 2.5vh;
   color: white;
@@ -407,13 +408,38 @@ p {
   text-align: justify;
 }
 
+.img_role{
+  font-size: 2vh;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  text-align: left;
+}
+
+.img_tool {
+  font-size: 2vh;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  text-align: left;
+}
+
 /* .work_description{
   color: white;
 } */
 
-.work_img{
+.work_img:before{
   box-shadow: 0 4px 25px rgba(14,36,49, .15);
-  background: rgba(0, 0, 0, 0.3);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -426,6 +452,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  background: rgba(0, 0, 0, 0.3);
   transition: all .2s linear;
 }
 
@@ -440,11 +467,12 @@ p {
 .work_img img {
   transition: 0.5s;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
-.work_img img:hover {
+/* .work_img img:hover {
   transform: scale(1.1);
-}
+} */
 
 .contact_input{
   width: 100%;
