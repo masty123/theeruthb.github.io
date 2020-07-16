@@ -142,6 +142,12 @@ img{
   font-weight: var(--font-semi);
 }
 
+.line{
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 15px;
+}
+
 @media screen and (max-width: 768px){
 
   .nav_menu{
