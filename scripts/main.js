@@ -66,7 +66,7 @@ sr.reveal('.footer', { interval: 100 });
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     
-    smoothscroll
+    //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
