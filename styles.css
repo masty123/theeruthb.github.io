@@ -74,9 +74,10 @@ ul{
   list-style: none;
 }
 
-a{
+a, a:visited{
   text-decoration:  none;
 }
+
 
 img{
   max-width: 100%;
@@ -268,6 +269,10 @@ img{
   border-radius: .5rem;
 }
 
+.button:visited{
+  text-decoration: none;
+}
+
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
 }
@@ -397,7 +402,7 @@ p {
   right: 0;
   top: 5%;
   color: #fff;
-  text-shadow: 2it addpx 2px #000000;
+  text-shadow: 2px 2px #000000;
 
 }
 
