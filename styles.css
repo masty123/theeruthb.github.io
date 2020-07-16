@@ -158,6 +158,10 @@ img{
     margin-right: auto;
   }
 
+  .work_text {
+    top: 25%;
+  }
+
 }
 .nav_item{
   margin-bottom:  var(--mb-4);
@@ -392,7 +396,7 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 15%;
 }
 
 .img_description{
@@ -531,13 +535,7 @@ p {
 @media screen and (min-width: 768px){
   body{
     margin: 0;
-  }
-
-  /* .work_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  } */
+  }  
 
   .section{
     padding-top: 4rem;
@@ -640,6 +638,10 @@ p {
 
   .home_img{
     right: 10% ;
+  }
+
+  .work_text {
+    top: 20%;
   }
 
   /* .work_text {
