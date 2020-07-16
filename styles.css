@@ -393,10 +393,10 @@ p {
   left: 0;
   right: 0;
   top: 15%;
-  /* text-align: center; */
 }
+
 .img_description{
-  font-size: 2.5vh;
+  font-size: 2.0vh;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -404,11 +404,9 @@ p {
   left: 0;
   right: 0;
   top: 0;
+  padding: 20px;
+  text-align: justify;
 }
-
-/* .work_description{
-  color: white;
-} */
 
 .work_img{
   box-shadow: 0 4px 25px rgba(14,36,49, .15);
@@ -491,10 +489,6 @@ p {
   margin: 0 var(--mb-2);
 }
 
-.imgicon {
-  width: 20px !important;
-  height: 20px !important;
-}
 
 
 
@@ -503,12 +497,6 @@ p {
   body{
     margin: 0;
   }
-
-  /* .work_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  } */
 
   .section{
     padding-top: 4rem;
