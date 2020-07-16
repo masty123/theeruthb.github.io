@@ -413,7 +413,7 @@ p {
 }
 
 .img_description{
-  font-size: 1.5vh;
+  font-size: 2.5vh;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -426,7 +426,7 @@ p {
 }
 
 .img_role{
-  font-size: 1.5vh;
+  font-size: 2vh;
   color: black;
   cursor: pointer;
   position: absolute;
@@ -439,7 +439,7 @@ p {
 }
 
 .img_tool {
-  font-size: 1.5vh;
+  font-size: 2vh;
   color: black;
   cursor: pointer;
   position: absolute;
