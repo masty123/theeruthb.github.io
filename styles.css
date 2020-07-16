@@ -397,7 +397,7 @@ p {
 }
 
 .work_text {
-  font-size: 4.5vh;
+  font-size: 4vh;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
@@ -673,16 +673,8 @@ p {
 
   .work_text {
     top: 15%;
-  }
-
-  /* .work_text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }*/
-  .work_text{
     font-size: 4vh;
-  } 
+  }
 
    .img_description{
     font-size: 2.5vh;
