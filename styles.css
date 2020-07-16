@@ -392,11 +392,10 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 15%;
+  top: 20%;
 }
-
 .img_description{
-  font-size: 2.0vh;
+  font-size: 2.5vh;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -408,8 +407,13 @@ p {
   text-align: justify;
 }
 
+/* .work_description{
+  color: white;
+} */
+
 .work_img{
   box-shadow: 0 4px 25px rgba(14,36,49, .15);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -422,7 +426,6 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
   transition: all .2s linear;
 }
 
@@ -489,6 +492,10 @@ p {
   margin: 0 var(--mb-2);
 }
 
+.imgicon {
+  width: 20px !important;
+  height: 20px !important;
+}
 
 
 
@@ -497,6 +504,12 @@ p {
   body{
     margin: 0;
   }
+
+  /* .work_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  } */
 
   .section{
     padding-top: 4rem;

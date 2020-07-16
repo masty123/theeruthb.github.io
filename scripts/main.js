@@ -55,7 +55,7 @@ sr.reveal('.skills_img', {interval: 200 });
 //Work Reveal
 sr.reveal('.work_img', {interval: 100});
 sr.reveal('.work_text', {delay: 200});
-sr.reveal('.work_description', {delay: 300});
+sr.reveal('.work_description', {delay: 200});
 
 // //Reveal Contact
 // sr.reveal('.contact_input', { interval: 100 });
