@@ -388,9 +388,7 @@ p {
 
 .work_text {
   font-size: 2vh;
-  color: white;
   cursor: pointer;
-  text-shadow: black;
   text-transform: uppercase;
   text-align: center;
   position: absolute;
@@ -398,11 +396,14 @@ p {
   left: 0;
   right: 0;
   top: 5%;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+
 }
 
 .img_description{
   font-size: 1.5vh;
-  color: white;
+  color: black;
   cursor: pointer;
   position: absolute;
   margin: 0 auto;
@@ -415,7 +416,7 @@ p {
 
 .img_role{
   font-size: 1.5vh;
-  color: white;
+  color: black;
   cursor: pointer;
   position: absolute;
   margin: 0 auto;
@@ -428,7 +429,7 @@ p {
 
 .img_tool {
   font-size: 1.5vh;
-  color: white;
+  color: black;
   cursor: pointer;
   position: absolute;
   margin: 0 auto;
@@ -443,13 +444,13 @@ p {
   color: white;
 } */
 
-.work_img:before{
-  box-shadow: 0 4px 25px rgba(14,36,49, .15);
+.work_img{
   border-radius: .5rem;
   overflow: hidden;
+  box-shadow: 0 4px 25px rgba(14,36,39,.15);
 }
 
-.work_img:before{
+/* .work_img:before{
   content: "";
   display: block;
   position: absolute;
@@ -462,22 +463,32 @@ p {
 }
 
 .work_img:hover:before{
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.0);
+} */
+.work_img:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s linear;
 }
 
 .work_img p{
   position: relative;
 }
 
-.work_img img {
+.work_img img:before {
   transition: 0.5s;
   cursor: pointer;
   border-radius: 0.5rem;
 }
 
-/* .work_img img:hover {
+ .work_img img:hover {
   transform: scale(1.1);
-} */
+} 
 
 .contact_input{
   width: 100%;
