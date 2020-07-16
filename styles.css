@@ -19,7 +19,7 @@
   --body-font: 'Futura', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --normal-font-size: 0.938rem;
 }
 
 /* Margins */
@@ -57,7 +57,7 @@ body{
 }
 
 h1,h2,p{
-  margin: 2;
+  margin: 0;
 }
 
 ul{
@@ -108,7 +108,7 @@ img{
   max-width: 1024px;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 2rem;
+  grid-column-gap: 2rem;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -128,16 +128,13 @@ img{
 .nav{
   height: var(--header-height);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
 }
 
 @media screen and (max-width: 768px){
 
-  .nav{
-    justify-content: space-between;
-  }
 
   .nav_menu{
     position: fixed;
@@ -192,6 +189,7 @@ img{
   cursor: pointer;
 }
 
+/* Active menu */
 .active::after{
   position: absolute;
   content: "";
@@ -373,6 +371,7 @@ p {
   padding-bottom: 2rem;
 }
 
+/* Work */
 .work{
   text-align: center;
 }
@@ -382,7 +381,7 @@ p {
 }
 
 .work_text {
-  font-size: 4vh;
+  font-size: 2vh;
   color: white;
   cursor: pointer;
   text-shadow: black;
@@ -392,11 +391,11 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 5%;
 }
 
 .img_description{
-  font-size: 2.5vh;
+  font-size: 1.5vh;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -405,11 +404,11 @@ p {
   right: 0;
   top: 0;
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .img_role{
-  font-size: 2vh;
+  font-size: 1.5vh;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -422,7 +421,7 @@ p {
 }
 
 .img_tool {
-  font-size: 2vh;
+  font-size: 1.5vh;
   color: white;
   cursor: pointer;
   position: absolute;
@@ -602,7 +601,7 @@ p {
   }
 
   .about_img img{
-    width: 300px;
+    width: 200px;
   }
 
   .work_container{
@@ -610,6 +609,7 @@ p {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
+
 
  .secondary{
     grid-template-columns: repeat(3, 1fr);
@@ -644,8 +644,24 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
+  }*/
+  .work_text{
+    font-size: 4vh;
+  } 
+
+   .img_description{
+    font-size: 2.5vh;
   }
-} */
+
+  .img_role{
+    font-size: 2.5vh;
+  }
+
+  .img_tool{
+    font-size: 2.5vh;
+  } 
+
+} 
 
 
 
