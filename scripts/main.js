@@ -31,7 +31,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px' ,
-    duration: 2000,
+    duration: 1000,
     reset: 'true'
 })
 
@@ -50,12 +50,12 @@ sr.reveal('.about_text', { delay: 200 });
 sr.reveal('.skills_subtitle', {});
 sr.reveal('.skills_text', {delay: 100});
 sr.reveal('.skills_data', {interval: 100});
-sr.reveal('.skills_img', {interval: 200 });
+sr.reveal('.skills_img', {interval: 100 });
 
 //Work Reveal
 sr.reveal('.work_img', {interval: 100});
-sr.reveal('.work_text', {delay: 200});
-sr.reveal('.work_description', {delay: 200});
+// sr.reveal('.work_text', {delay: 200});
+sr.reveal('.work_description', {delay: 100});
 
 // //Reveal Contact
 // sr.reveal('.contact_input', { interval: 100 });
